@@ -1,28 +1,132 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a {
+  color: #000;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+body {
+  background-color: #e6ecf0;
+  margin-top: 48px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.site-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.App-intro {
-  font-size: large;
+.col {
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.trender:hover > h3 {
+  text-decoration: underline;
+}
+
+.change:hover {
+  text-decoration: underline;
+}
+
+.nav-list {
+  padding: 15px;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.nav-list li:hover {
+  text-decoration: underline;
+}
+
+.nav-list li:first-child {
+  cursor: default;
+}
+.nav-list li:first-child:hover {
+  text-decoration: none;
+}
+
+.advertise {
+  margin-left: 10px;
+}
+
+.advertise:hover {
+  text-decoration: underline;
+}
+
+.follow:hover {
+  background-color: rgba(230, 126, 34, 0.2);
+}
+.new-chirp-place::placeholder {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 3px;
+}
+
+.user:hover {
+  text-decoration: underline;
+  color: #e67e22;
+}
+
+.navigation ul {
+  display: flex;
+  
+  margin-bottom: 0;
+  list-style-type: none;
+  align-items: center;
+}
+
+
+.link{
+  padding: 12.5px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #657786;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.link:first-child {
+  color:#e67e22;
+  border-bottom-color: #e67e22;
+}
+
+.link:hover {
+  color:#e67e22;
+  border-bottom-color: #e67e22;
+}
+
+.bird {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputSubmit {
+  float: right;
+  padding: 5px 15px;
+  font-size: 0.8em;
+  border: 0;
+  background: #e67e22;
+  color: #fff;
+  padding: 6px 16px;
+  cursor: pointer;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.chirp:hover {
+  background-color: #ecf0f1;
+  cursor: pointer;
 }
